@@ -1,7 +1,32 @@
 .fir-select {
-
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.fir-select-option {
+.fir-select-value {
+    flex: 1;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.fir-select-options {
+    position: absolute;
+    top: 4.6rem;
+    left: 0;
+    right: 0;
+    border-radius: 1rem;
+}
+
+.fir-select-options-item {
     color: white;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    background: #424A9E;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
