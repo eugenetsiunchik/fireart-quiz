@@ -1,0 +1,21 @@
+.fir-result-answer {
+    display: flex;
+    border-radius: 0.9rem;
+    color: #464FAC;
+    padding: 1.4rem 1.4rem 1.4rem 2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-right: -6rem;
+    margin-left: -6rem;
+    height: 2.8rem;
+}
+
+.fir-result-answer span {
+    font-weight: 500;
+    margin-right: 2rem;
+
+}
+
+.fir-result-answer-mark {
+    margin-left: 1rem;
+}

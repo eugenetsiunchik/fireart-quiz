@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProgressLine.css";
+import ProgressNumbers from "../ProgressNumbers/ProgressNumbers";
 
 export interface ProgressLineProps {
     value: number,
@@ -11,10 +12,7 @@ function ProgressLine(props: ProgressLineProps) {
     const percentage = Math.round((value / count) * 100);
     return (
         <div className="fir-progress-line">
-            <div className="fir-progress-line-numbers">
-                <span className="fir-progress-line-numbers-value">{ "0" + value }</span>
-                <span className="fir-progress-line-numbers-count">{ '/' + count }</span>
-            </div>
+            <ProgressNumbers value={value} count={count}/>
             <div className="fir-progress-line-visual">
                 <div className="fir-progress-line-visual-active" style={{ width: percentage + '%' }}/>
                 <div className="fir-progress-line-visual-passive"/>

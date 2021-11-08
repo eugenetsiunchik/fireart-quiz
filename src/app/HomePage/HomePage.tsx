@@ -20,7 +20,7 @@ function HomePage() {
     const dispatch = useAppDispatch();
     return(
         <div className="fir-app-home">
-            <div className="fir-app-home-container">
+            <div className="fir-container">
                 <span className="fir-app-home-top_text">Welcome to the</span>
                 <Logo className="fir-app-home-logo"/>
                 <Label Image={<Cup/>} text={'Difficulty'}/>

@@ -6,29 +6,6 @@
     margin-bottom: 2rem;
 }
 
-.fir-progress-line-numbers {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.fir-progress-line-numbers span {
-    font-weight: 700;
-}
-
-.fir-progress-line-numbers-value {
-    font-size: 1.8rem;
-    color: #FF7878;
-}
-
-.fir-progress-line-numbers-count {
-    display: block;
-    font-size: 1.2rem;
-    color: #4953BE;
-    /* fix font gap */
-    margin-bottom: 4px;
-}
-
 .fir-progress-line-visual {
     position: relative;
     height: 0.3rem;

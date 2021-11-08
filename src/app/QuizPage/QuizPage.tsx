@@ -10,7 +10,7 @@ function QuizPage() {
     const dispatch = useAppDispatch();
     return(
         <div className="fir-app-quiz">
-            <div className="fir-app-quiz-container">
+            <div className="fir-container">
                 <span className="fir-app-quiz-title">Entertainment:</span>
                 <span className="fir-app-quiz-title">Videogames</span>
                 <span className="fir-app-quiz-level">level 1</span>

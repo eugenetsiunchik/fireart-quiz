@@ -1,0 +1,11 @@
+.fir-stars-score {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.fir-stars-score-star {
+    margin: 0.1rem;
+}

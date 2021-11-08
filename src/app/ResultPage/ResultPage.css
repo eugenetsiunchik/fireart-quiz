@@ -1,0 +1,26 @@
+.fir-app-result {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4751C0;
+}
+
+.fir-app-result-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fir-app-result-title > span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.fir-app-result-title .fir-progress-numbers-count {
+    color: white;
+}

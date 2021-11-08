@@ -24,6 +24,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.fir-container {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .fir-inputs {
   height: 4.6rem;
   background-color: transparent;
