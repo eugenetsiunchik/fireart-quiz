@@ -7,7 +7,7 @@ function ResultPage() {
     const dispatch = useAppDispatch();
     return(
         <div>
-            <span>Quiz Page</span>
+            <span>Result Page</span>
             <button
                 aria-label="Result page"
                 onClick={() => dispatch(redirect(Routes.home))}
