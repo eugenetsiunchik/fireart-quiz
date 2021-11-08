@@ -12,7 +12,7 @@ function ProgressLine(props: ProgressLineProps) {
     const percentage = Math.round((value / count) * 100);
     return (
         <div className="fir-progress-line">
-            <ProgressNumbers value={value} count={count}/>
+            <ProgressNumbers value={value} amount={count}/>
             <div className="fir-progress-line-visual">
                 <div className="fir-progress-line-visual-active" style={{ width: percentage + '%' }}/>
                 <div className="fir-progress-line-visual-passive"/>

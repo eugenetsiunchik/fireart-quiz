@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { useDispatch } from "react-redux";
 import routingReducer from "../common/routingSlice";
+import homePageReducer from "../app/HomePage/homePageSlice";
+import quizPageReducer from "../app/QuizPage/quizPageSlice";
 
 const store = configureStore({
     reducer: {
-        routing: routingReducer
+        routing: routingReducer,
+        home: homePageReducer,
+        quiz: quizPageReducer
     }
 })
 

@@ -1,19 +1,17 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, InputHTMLAttributes, useState } from "react";
 import "./Input.css";
 
 export interface InputProps {
-    value?: string,
-    onChange: Function
+    onChangeCallback?: Function
 }
 
-function Input(props: InputProps) {
-    const { value: defaultValue = '', onChange: onChangeCallback } = props;
-    const [ value, setValue ] = useState(defaultValue);
+function Input(props: InputHTMLAttributes<HTMLInputElement> & InputProps) {
+    const [ value, setValue ] = useState(props.value);
 
     const onChange = (event: ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value;
         setValue(value);
-        onChangeCallback(value);
+        props.onChangeCallback && props.onChangeCallback(value);
     }
 
     return (
@@ -21,7 +19,7 @@ function Input(props: InputProps) {
             className="fir-inputs fir-input"
             onChange={event => onChange(event)}
             value={value}
-            type="number"
+            {...props}
         />
     )
 }

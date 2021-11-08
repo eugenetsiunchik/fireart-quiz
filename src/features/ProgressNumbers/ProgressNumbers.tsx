@@ -3,15 +3,15 @@ import "./ProgressNumbers.css";
 
 export interface ProgressNumbersProps {
     value: number,
-    count: number
+    amount: number
 }
 
 function ProgressNumbers(props: ProgressNumbersProps) {
-    const { value, count} = props;
+    const { value, amount } = props;
     return (
         <div className="fir-progress-numbers">
             <span className="fir-progress-numbers-value">{ "0" + value }</span>
-            <span className="fir-progress-numbers-count">{ '/' + count }</span>
+            <span className="fir-progress-numbers-count">{ '/' + amount }</span>
         </div>
     )
 }

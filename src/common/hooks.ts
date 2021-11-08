@@ -1,4 +1,4 @@
-import { RefObject, useEffect } from 'react';
+import { RefObject, useEffect, useState } from 'react';
 
 export const useOutsideClick = (ref: RefObject<HTMLDivElement>, callback: Function) => {
 
@@ -16,3 +16,22 @@ export const useOutsideClick = (ref: RefObject<HTMLDivElement>, callback: Functi
         };
     });
 };
+
+export function useFetch() {
+    const [ response, setResponse ] = useState<null | object>(null);
+    const [ error, setError ] = useState<Error | null>();
+    const [ isLoading, setIsLoading ] = useState(true);
+
+    const run = async (request: RequestInfo, init?: RequestInit) => {
+        try {
+            const response = await fetch(request, {...init});
+            setResponse(await response?.json());
+            setIsLoading(false);
+        } catch (error: any) {
+            setError(error);
+            setIsLoading(false);
+        }
+    }
+
+    return { run, response, error, isLoading };
+}

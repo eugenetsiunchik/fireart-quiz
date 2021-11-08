@@ -3,15 +3,14 @@ import { ReactComponent as StarActive } from "../../assets/star-active.svg";
 import { ReactComponent as StarInactive } from "../../assets/star-inactive.svg";
 import "./StarsScore.css";
 
-const MAX_VALUE: number = 10;
-const stars = Array.from({length: MAX_VALUE}, (_, index) => index + 1);
-
 interface StarsScoreProps {
     value: number;
+    amount: number;
 }
 
 function StarsScore(props: StarsScoreProps) {
-    const { value } = props;
+    const { value, amount } = props;
+    const stars = Array.from({length: amount}, (_, index) => index + 1);
     return (
         <div className="fir-stars-score">
             {

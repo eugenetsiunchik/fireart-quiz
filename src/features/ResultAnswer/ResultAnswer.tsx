@@ -5,14 +5,14 @@ import { ReactComponent as Wrong } from "../../assets/wrong.svg";
 
 export interface ResultAnswerProps {
     isCorrect: boolean,
-    text: string
+    text: string | null
 }
 
 function ResultAnswer(props: ResultAnswerProps) {
     const { isCorrect, text } = props;
     return (
         <div className="fir-result-answer" style={{ backgroundColor: isCorrect ? 'white' : '#FFDBDB' }}>
-            <span>{ text }</span>
+            <span dangerouslySetInnerHTML={{ __html: text || '' }}/>
             <div className="fir-result-answer-mark">
                 {
                     isCorrect ? <Correct/> : <Wrong/>
