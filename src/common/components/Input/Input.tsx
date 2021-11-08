@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
+import "./Input.css";
 
 export interface InputProps {
     value?: string,
@@ -17,8 +18,10 @@ function Input(props: InputProps) {
 
     return (
         <input
+            className="fir-inputs fir-input"
             onChange={event => onChange(event)}
             value={value}
+            type="number"
         />
     )
 }

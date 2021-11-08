@@ -9,6 +9,12 @@ import './HomePage.css';
 import Label from "../../common/components/Label/Label";
 import Select from "../../common/components/Select/Select";
 import Input from "../../common/components/Input/Input";
+import Button from "../../common/components/Button/Button";
+
+const difficultyOptions = [
+    'Hard',
+    'Easy'
+]
 
 function HomePage() {
     const dispatch = useAppDispatch();
@@ -18,15 +24,16 @@ function HomePage() {
                 <span className="fir-app-home-top_text">Welcome to the</span>
                 <Logo className="fir-app-home-logo"/>
                 <Label Image={<Cup/>} text={'Difficulty'}/>
-                <Select options={[]} onSelect={(selected: string) => {}}/>
+                <Select options={difficultyOptions} onSelect={(selected: string) => {}}/>
                 <Label Image={<Star/>} text={'Amount'}/>
                 <Input onChange={(value: string) => {}} />
-                <button
-                    aria-label="Start quiz"
+                <Button
+                    className={"fir-app-home-button"}
+                    ariaLabel="Start quiz"
                     onClick={() => dispatch(redirect(Routes.quiz))}
                 >
-                    Next
-                </button>
+                    TRUE
+                </Button>
             </div>
 
         </div>

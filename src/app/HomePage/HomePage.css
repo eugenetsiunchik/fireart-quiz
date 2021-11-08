@@ -9,6 +9,9 @@
 .fir-app-home-container {
     display: flex;
     flex-direction: column;
+    width: 28rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .fir-app-home-top_text {
@@ -21,7 +24,11 @@
 .fir-app-home-logo {
     width: 45rem;
     height: 30rem;
-    margin-top: -4rem;
-    margin-bottom: -6rem;
+    margin: -4rem -8rem -6rem;
+}
+
+.fir-app-home-button {
+    margin-top: 5rem;
+    border-bottom: 0.4rem solid #C65252 !important;
 }
 
