@@ -1,0 +1,54 @@
+.fir-app-quiz {
+    font-family: Quicksand;
+}
+
+.fir-app-quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+}
+
+.fir-app-quiz-title {
+    font-size: 5rem;
+    color: #4953BE;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.fir-app-quiz-level {
+    font-size: 1.8rem;
+    color: #4953BE;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fir-app-quiz-question {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4953BE;
+    text-align: center;
+    margin: 5rem -6rem;
+}
+
+.fir-app-quiz-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* specific selector needed to override common style */
+.fir-app-quiz-button > .fir-app-quiz-button-true {
+    background: #424A9E none;
+    color: white;
+}
+
+.fir-app-quiz-button > .fir-app-quiz-button-false {
+    background: white none;
+    color: #4953BE;
+    border-color: #4953BE;
+    border-width: 0.1rem;
+}
