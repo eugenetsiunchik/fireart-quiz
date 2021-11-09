@@ -1,5 +1,11 @@
 .fir-app-quiz {
-    font-family: Quicksand;
+    display: flex;
+}
+
+.fir-app-quiz-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fir-app-quiz-title {
@@ -46,5 +52,5 @@
     background: white none;
     color: #4953BE;
     border-color: #4953BE;
-    border-width: 0.1rem;
+    border-width: 0.15rem;
 }

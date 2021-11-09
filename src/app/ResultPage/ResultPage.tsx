@@ -30,10 +30,12 @@ function ResultPage() {
                     <ProgressNumbers value={correctCount} amount={answers.length}/>
                 </div>
                 <StarsScore value={correctCount} amount={answers.length}/>
-                {
-                    answers.map(value => value && <ResultAnswer key={value.index} isCorrect={value.isCorrect} text={value.question}/>)
-                }
-                <Button ariaLabel={'Go home'} onClick={() => goHome()}>TRUE</Button>
+                <div className="fir-app-result-answers">
+                    {
+                        answers.map(value => value && <ResultAnswer key={value.index} isCorrect={value.isCorrect} text={value.question}/>)
+                    }
+                </div>
+                <Button ariaLabel={'Play again'} onClick={() => goHome()}>PLAY AGAIN</Button>
             </div>
         </div>
     )

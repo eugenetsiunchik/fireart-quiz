@@ -21,6 +21,10 @@
     margin-right: 1rem;
 }
 
-.fir-app-result-title .fir-progress-numbers-count {
+.fir-app-result-title .fir-progress-numbers-amount {
     color: white;
+}
+
+.fir-app-result-answers {
+    margin-top: 2rem;
 }

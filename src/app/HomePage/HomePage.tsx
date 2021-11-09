@@ -13,14 +13,14 @@ import Button from "../../common/components/Button/Button";
 import InputNumber from "../../common/components/Input/InputNumber";
 
 const difficultyOptions = [
-    'Hard',
-    'Easy'
+    'hard',
+    'easy'
 ]
 
 function HomePage() {
     const dispatch = useAppDispatch();
     const [ difficulty, setDifficulty ] = useState(difficultyOptions[0]);
-    const [ amount, setAmount ] = useState(3);
+    const [ amount, setAmount ] = useState(10);
 
     const goNext = () => {
         dispatch(saveSettings({difficulty: difficulty.toLocaleLowerCase(), amount}))
@@ -36,6 +36,7 @@ function HomePage() {
                 <Select options={difficultyOptions} onSelect={(selected: string) => setDifficulty(selected)}/>
                 <Label Image={<Star/>} text={'Amount'}/>
                 <InputNumber
+                    value={amount}
                     onChangeCallback={(value: number) => setAmount(value)}
                     type="number"
                     aria-label="Amount of questions"
