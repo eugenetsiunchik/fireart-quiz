@@ -1,5 +1,6 @@
 .fir-app-quiz {
     display: flex;
+    position: relative;
 }
 
 .fir-app-quiz-container {
@@ -51,6 +52,39 @@
 .fir-app-quiz-button > .fir-app-quiz-button-false {
     background: white none;
     color: #4953BE;
-    border-color: #4953BE;
-    border-width: 0.15rem;
+    border: 0.15rem solid #4953BE;
+}
+
+.fir-app-quiz-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+}
+
+.fir-app-quiz-botleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 12rem;
+}
+
+
+.fir-app-quiz-botright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+}
+
+
+.fir-app-quiz-topright {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 6rem;
+    height: 24rem;
 }

@@ -28,6 +28,7 @@ input[type=number] {
   width: 28rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .fir-inputs {

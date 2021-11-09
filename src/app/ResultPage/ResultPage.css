@@ -1,4 +1,5 @@
 .fir-app-result {
+    position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -28,3 +29,39 @@
 .fir-app-result-answers {
     margin-top: 2rem;
 }
+
+
+.fir-app-result-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 24rem;
+}
+
+.fir-app-result-botleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    height: 12rem;
+}
+
+
+.fir-app-result-botright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4rem;
+    height: 32rem;
+}
+
+
+.fir-app-result-topright {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 6rem;
+    height: 24rem;
+}
+

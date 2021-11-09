@@ -6,6 +6,10 @@ import { Routes } from "../../common/routingHelper";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as Cup } from "../../assets/cup.svg";
 import { ReactComponent as Star } from "../../assets/star-round.svg";
+import { ReactComponent as TopLeft } from "../../assets/home-topleft.svg";
+import { ReactComponent as BotLeft } from "../../assets/home-botleft.svg";
+import { ReactComponent as BotRight } from "../../assets/home-botright.svg";
+import { ReactComponent as TopRight } from "../../assets/home-topright.svg";
 import "./HomePage.css";
 import Label from "../../common/components/Label/Label";
 import Select from "../../common/components/Select/Select";
@@ -29,6 +33,10 @@ function HomePage() {
 
     return(
         <div className="fir-app-home">
+            <TopLeft className="fir-app-home-topleft"/>
+            <BotLeft className="fir-app-home-botleft"/>
+            <BotRight className="fir-app-home-botright"/>
+            <TopRight className="fir-app-home-topright"/>
             <div className="fir-container">
                 <span className="fir-app-home-top_text">Welcome to the</span>
                 <Logo className="fir-app-home-logo"/>
@@ -51,7 +59,6 @@ function HomePage() {
                     TRUE
                 </Button>
             </div>
-
         </div>
     )
 }

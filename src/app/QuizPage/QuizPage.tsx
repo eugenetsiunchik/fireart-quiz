@@ -10,6 +10,10 @@ import { useFetch } from "../../common/hooks";
 import { useSelector } from "react-redux";
 import { API_URL } from "../../common/constants";
 import Loader from "../../common/components/Loader/Loader";
+import { ReactComponent as TopLeft } from "../../assets/quiz-topleft.svg";
+import { ReactComponent as BotLeft } from "../../assets/quiz-botleft.svg";
+import { ReactComponent as BotRight } from "../../assets/quiz-botright.svg";
+import { ReactComponent as TopRight } from "../../assets/quiz-topright.svg";
 
 type QuestionType = {
     category: string,
@@ -65,6 +69,10 @@ function QuizPage() {
 
     return (
         <div className="fir-app-quiz">
+            <TopLeft className="fir-app-quiz-topleft"/>
+            <BotLeft className="fir-app-quiz-botleft"/>
+            <BotRight className="fir-app-quiz-botright"/>
+            <TopRight className="fir-app-quiz-topright"/>
             <div className="fir-container fir-app-quiz-container">
                 {
                     request.isLoading ? <Loader/> : (
