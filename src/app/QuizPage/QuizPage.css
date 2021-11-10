@@ -1,5 +1,7 @@
 .fir-app-quiz {
     display: flex;
+    flex: 1;
+    justify-content: center;
     position: relative;
 }
 
@@ -17,6 +19,14 @@
     text-align: center;
     margin-left: -6rem;
     margin-right: -6rem;
+}
+
+
+@media (max-width:480px) {
+    .fir-app-quiz-title {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 .fir-app-quiz-level {
@@ -37,6 +47,14 @@
     margin: 5rem -6rem;
 }
 
+
+@media (max-width:480px) {
+    .fir-app-quiz-question {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
 .fir-app-quiz-button {
     display: flex;
     flex-direction: column;
@@ -53,38 +71,4 @@
     background: white none;
     color: #4953BE;
     border: 0.15rem solid #4953BE;
-}
-
-.fir-app-quiz-topleft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 8rem;
-    height: 8rem;
-}
-
-.fir-app-quiz-botleft {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10rem;
-    height: 12rem;
-}
-
-
-.fir-app-quiz-botright {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 8rem;
-    height: 8rem;
-}
-
-
-.fir-app-quiz-topright {
-    position: absolute;
-    top: 2rem;
-    right: 0;
-    width: 6rem;
-    height: 24rem;
 }

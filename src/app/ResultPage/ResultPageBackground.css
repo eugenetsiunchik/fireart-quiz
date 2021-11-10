@@ -1,0 +1,128 @@
+
+.fir-app-result-back-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 24rem;
+}
+
+.fir-app-result-back-botleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    height: 12rem;
+}
+
+
+.fir-app-result-back-botright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4rem;
+    height: 32rem;
+}
+
+
+.fir-app-result-back-topright {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 6rem;
+    height: 24rem;
+}
+
+.fir-app-result-back-botright-mobile {
+    display: none;
+}
+
+.fir-app-result-back-topright-mobile {
+    display: none;
+}
+
+.fir-app-result-back-midright-mobile {
+    display: none;
+}
+
+.fir-app-result-back-midright2-mobile {
+    display: none;
+}
+
+.fir-app-result-back-midleft-mobile {
+    display: none;
+}
+
+@media (max-width:480px) {
+
+    .fir-app-result-back-topleft {
+        display: none;
+    }
+
+    .fir-app-result-back-topleft-mobile {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 8rem;
+        height: 24rem;
+    }
+
+    .fir-app-result-back-midleft-mobile {
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 10rem;
+        height: 32rem;
+    }
+
+    .fir-app-result-back-botleft {
+        display: none;
+    }
+
+    .fir-app-result-back-topright {
+        display: none;
+    }
+
+    .fir-app-result-back-topright-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .fir-app-result-back-midright-mobile {
+        display: block;
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 8rem;
+        height: 42rem;
+    }
+
+    .fir-app-result-back-midright2-mobile {
+        display: block;
+        position: absolute;
+        top: 60%;
+        right: 0;
+        width: 8rem;
+        height: 24rem;
+    }
+
+    .fir-app-result-back-botright {
+        display: none;
+    }
+
+    .fir-app-result-back-botright-mobile {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 6rem;
+        height: 6rem;
+    }
+
+}

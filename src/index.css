@@ -1,3 +1,9 @@
+@media (max-width:480px) {
+  html {
+    font-size: 10px;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -25,7 +31,7 @@ input[type=number] {
 .fir-container {
   display: flex;
   flex-direction: column;
-  width: 28rem;
+  width: 32rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   z-index: 1;

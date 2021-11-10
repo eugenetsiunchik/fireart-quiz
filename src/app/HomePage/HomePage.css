@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.fir-app-home-container {
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 .fir-app-home-top_text {
     font-weight: 700;
     font-size: 3rem;
@@ -15,47 +20,14 @@
 }
 
 .fir-app-home-logo {
-    width: 45rem;
+    width: 40rem;
     height: 30rem;
     margin: -4rem -8rem -6rem;
+    align-self: center;
 }
 
 .fir-app-home-button {
     margin-top: 5rem;
     border-bottom: 0.4rem solid #C65252 !important;
-}
-
-.fir-app-home-topleft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 8rem;
-    height: 32rem;
-}
-
-.fir-app-home-botleft {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10rem;
-    height: 10rem;
-}
-
-
-.fir-app-home-botright {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 4rem;
-    height: 32rem;
-}
-
-
-.fir-app-home-topright {
-    position: absolute;
-    top: 2rem;
-    right: 0;
-    width: 6rem;
-    height: 24rem;
 }
 

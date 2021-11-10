@@ -26,7 +26,7 @@ function Select(props: SelectProps) {
     return (
         <div ref={ref}  className="fir-inputs fir-select" onClick={() => setOptionsVisibility(!optionsVisibility)}>
             <span className="fir-select-value">{selected}</span>
-            <DownIcon/>
+            <DownIcon className="fir-select-icon"/>
             <div className="fir-select-options" style={{ display: optionsVisibility ? 'block' : 'none' }}>
                 {
                     options.map((option, index) => (

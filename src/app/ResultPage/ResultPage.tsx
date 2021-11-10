@@ -10,10 +10,7 @@ import StarsScore from "../../features/StarsScore/StarsScore";
 import ResultAnswer from "../../features/ResultAnswer/ResultAnswer";
 import Button from "../../common/components/Button/Button";
 import { useSelector } from "react-redux";
-import { ReactComponent as TopLeft } from "../../assets/result-topleft.svg";
-import { ReactComponent as BotLeft } from "../../assets/result-botleft.svg";
-import { ReactComponent as BotRight } from "../../assets/result-botright.svg";
-import { ReactComponent as TopRight } from "../../assets/result-topright.svg";
+import ResultPageBackground from "./ResultPageBackground";
 
 function ResultPage() {
     const dispatch = useAppDispatch();
@@ -27,13 +24,10 @@ function ResultPage() {
 
     return(
         <div className="fir-app-result">
-            <TopLeft className="fir-app-result-topleft"/>
-            <BotLeft className="fir-app-result-botleft"/>
-            <BotRight className="fir-app-result-botright"/>
-            <TopRight className="fir-app-result-topright"/>
+            <ResultPageBackground/>
             <div className="fir-container">
                 <div className="fir-app-result-title">
-                    <Avatar/>
+                    <Avatar className="fir-app-result-avatar"/>
                     <span>Your score</span>
                     <ProgressNumbers value={correctCount} amount={answers.length}/>
                 </div>

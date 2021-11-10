@@ -1,0 +1,91 @@
+
+.fir-app-quiz-back-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+}
+
+.fir-app-quiz-back-botleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 12rem;
+}
+
+
+.fir-app-quiz-back-botright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+}
+
+
+.fir-app-quiz-back-topright {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 6rem;
+    height: 24rem;
+}
+
+.fir-app-quiz-back-botleft-mobile {
+    display: none;
+}
+
+.fir-app-quiz-back-topright-mobile {
+    display: none;
+}
+
+.fir-app-quiz-back-midright-mobile {
+    display: none;
+}
+
+@media (max-width:480px) {
+
+    /* for some reason exported svg doesn't look like in figma, so left desktop version */
+    .fir-app-quiz-back-botleft {
+        display: block;
+    }
+
+    /* for some reason exported svg doesn't look like in figma */
+    .fir-app-quiz-back-botleft-mobile {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 10rem;
+        height: 12rem;
+    }
+
+    .fir-app-quiz-back-botright {
+        margin-bottom: -2.5rem;
+        margin-right: -2.5rem;
+    }
+
+    .fir-app-quiz-back-topright {
+        display: none;
+    }
+
+    .fir-app-quiz-back-topright-mobile {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: 8rem;
+        height: 24rem;
+    }
+
+    .fir-app-quiz-back-midright-mobile {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 4rem;
+        height: 24rem;
+    }
+}

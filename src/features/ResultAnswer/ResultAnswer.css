@@ -10,6 +10,14 @@
     height: 2.8rem;
 }
 
+@media (max-width:480px) {
+    .fir-result-answer {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
 .fir-result-answer span {
     flex: 1;
     font-weight: 500;
