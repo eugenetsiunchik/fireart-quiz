@@ -7,6 +7,22 @@
     background-color: #4751C0;
 }
 
+.fir-container.fir-app-result-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width:480px) {
+    .fir-container.fir-app-result-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
 .fir-app-result-title {
     display: flex;
     flex-direction: row;
@@ -16,7 +32,7 @@
 
 .fir-app-result-title > span {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     margin-left: 1rem;
     margin-right: 1rem;

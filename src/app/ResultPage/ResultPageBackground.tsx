@@ -13,7 +13,7 @@ import "./ResultPageBackground.css";
 
 function ResultPageBackground() {
     return (
-        <>
+        <div className="fir-background">
             <TopLeft className="fir-app-result-back-topleft"/>
             <BotLeft className="fir-app-result-back-botleft"/>
             <BotRight className="fir-app-result-back-botright"/>
@@ -24,7 +24,7 @@ function ResultPageBackground() {
             <MidRightMobile className="fir-app-result-back-midright-mobile"/>
             <MidRight2Mobile className="fir-app-result-back-midright2-mobile"/>
             <BotRightMobile className="fir-app-result-back-botright-mobile"/>
-        </>
+        </div>
     )
 }
 

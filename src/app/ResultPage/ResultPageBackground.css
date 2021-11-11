@@ -32,6 +32,9 @@
     width: 6rem;
     height: 24rem;
 }
+.fir-app-result-back-topleft-mobile {
+    display: none;
+}
 
 .fir-app-result-back-botright-mobile {
     display: none;

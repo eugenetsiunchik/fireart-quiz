@@ -10,7 +10,7 @@ import "./QuizPageBackground.css";
 
 function QuizPageBackground() {
     return (
-        <>
+        <div className="fir-background">
             <TopLeft className="fir-app-quiz-back-topleft"/>
             <BotLeft className="fir-app-quiz-back-botleft"/>
             <BotRight className="fir-app-quiz-back-botright"/>
@@ -18,7 +18,7 @@ function QuizPageBackground() {
             <BotLeftMobile className="fir-app-quiz-back-botleft-mobile"/>
             <TopRightMobile className="fir-app-quiz-back-topright-mobile"/>
             <MidRightMobile className="fir-app-quiz-back-midright-mobile"/>
-        </>
+        </div>
     )
 }
 

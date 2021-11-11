@@ -3,3 +3,9 @@
     justify-content: center;
     min-height: 100vh;
 }
+
+@media (max-width:480px) {
+    .fir-app {
+        min-height: calc(var(--vh, 1vh) * 100);
+    }
+}

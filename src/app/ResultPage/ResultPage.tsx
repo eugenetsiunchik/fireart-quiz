@@ -25,7 +25,7 @@ function ResultPage() {
     return(
         <div className="fir-app-result">
             <ResultPageBackground/>
-            <div className="fir-container">
+            <div className="fir-container fir-app-result-container">
                 <div className="fir-app-result-title">
                     <Avatar className="fir-app-result-avatar"/>
                     <span>Your score</span>

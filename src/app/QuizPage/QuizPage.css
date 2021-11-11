@@ -3,19 +3,22 @@
     flex: 1;
     justify-content: center;
     position: relative;
+    height: inherit;
 }
 
 .fir-app-quiz-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .fir-app-quiz-title {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #4953BE;
-    font-weight: 500;
-    letter-spacing: 0.05em;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
     text-align: center;
     margin-left: -6rem;
     margin-right: -6rem;

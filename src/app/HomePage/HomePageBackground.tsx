@@ -10,14 +10,14 @@ import "./HomePageBackground.css";
 
 function HomePageBackground() {
     return (
-        <>
+        <div className="fir-background">
             <TopLeft className="fir-app-home-back-topleft"/>
             <BotLeft className="fir-app-home-back-botleft"/>
             <BotRight className="fir-app-home-back-botright"/>
             <TopRight className="fir-app-home-back-topright"/>
             <BotLeftMobile className="fir-app-home-back-botleft-mobile"/>
             <TopRightMobile className="fir-app-home-back-topright-mobile"/>
-        </>
+        </div>
     )
 }
 

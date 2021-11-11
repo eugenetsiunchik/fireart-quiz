@@ -32,21 +32,23 @@ function HomePage() {
         <div className="fir-app-home">
             <HomePageBackground/>
             <div className="fir-container fir-app-home-container">
-                <div style={{ flex: 1 }}/>
-                <span className="fir-app-home-top_text">Welcome to the</span>
-                <Logo className="fir-app-home-logo"/>
-                <Label Image={<Cup/>} text={'Difficulty'}/>
-                <Select options={difficultyOptions} onSelect={(selected: string) => setDifficulty(selected)}/>
-                <Label Image={<Star/>} text={'Amount'}/>
-                <InputNumber
-                    value={amount}
-                    onChangeCallback={(value: number) => setAmount(value)}
-                    type="number"
-                    aria-label="Amount of questions"
-                    min={0}
-                    max={10}
-                />
-                <div style={{ flex: 1 }}/>
+                <div className="fir-app-home-top">
+                    <span className="fir-app-home-top-text">Welcome to the</span>
+                    <Logo className="fir-app-home-top-logo"/>
+                </div>
+                <div className="fir-app-home-form">
+                    <Label Image={<Cup/>} text={'Difficulty'}/>
+                    <Select options={difficultyOptions} onSelect={(selected: string) => setDifficulty(selected)}/>
+                    <Label Image={<Star/>} text={'Amount'}/>
+                    <InputNumber
+                        value={amount}
+                        onChangeCallback={(value: number) => setAmount(value)}
+                        type="number"
+                        aria-label="Amount of questions"
+                        min={0}
+                        max={10}
+                    />
+                </div>
                 <Button
                     className={"fir-app-home-button"}
                     ariaLabel="Start quiz"
