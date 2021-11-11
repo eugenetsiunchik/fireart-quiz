@@ -11,6 +11,7 @@ import ResultAnswer from "../../features/ResultAnswer/ResultAnswer";
 import Button from "../../common/components/Button/Button";
 import { useSelector } from "react-redux";
 import ResultPageBackground from "./ResultPageBackground";
+import Close from "../../common/components/Close/Close";
 
 function ResultPage() {
     const dispatch = useAppDispatch();
@@ -25,6 +26,7 @@ function ResultPage() {
     return(
         <div className="fir-app-result">
             <ResultPageBackground/>
+            <Close className="fir-close-modal" onClickCallback={() => goHome()}/>
             <div className="fir-container fir-app-result-container">
                 <div className="fir-app-result-title">
                     <Avatar className="fir-app-result-avatar"/>
@@ -37,7 +39,13 @@ function ResultPage() {
                         answers.map(value => value && <ResultAnswer key={value.index} isCorrect={value.isCorrect} text={value.question}/>)
                     }
                 </div>
-                <Button ariaLabel={'Play again'} onClick={() => goHome()}>PLAY AGAIN</Button>
+                <Button
+                    className={"fir-button-primary"}
+                    ariaLabel={'Play again'}
+                    onClick={() => goHome()}
+                >
+                    PLAY AGAIN
+                </Button>
             </div>
         </div>
     )

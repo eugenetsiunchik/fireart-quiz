@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { RootState, useAppDispatch } from "../../config/store";
 import { redirect } from '../../common/routingSlice';
-import { saveQuestions, answerOnQuestion } from './quizPageSlice';
+import { saveQuestions, answerOnQuestion, flushQuiz } from './quizPageSlice';
 import { Routes } from "../../common/routingHelper";
 import ProgressLine from "../../features/ProgressLine/ProgressLine";
 import Button from "../../common/components/Button/Button";
@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { API_URL } from "../../common/constants";
 import Loader from "../../common/components/Loader/Loader";
 import QuizPageBackground from "./QuizPageBackground";
+import Close from "../../common/components/Close/Close";
 
 type QuestionType = {
     category: string,
@@ -54,6 +55,11 @@ function QuizPage() {
         setIndex(index + 1);
     }
 
+    const goHome = () => {
+        dispatch(flushQuiz())
+        dispatch(redirect(Routes.home));
+    }
+
     if (request.error) {
         return (
             <div className="fir-app-quiz">
@@ -73,6 +79,7 @@ function QuizPage() {
     return (
         <div className="fir-app-quiz">
             <QuizPageBackground/>
+            <Close isDark onClickCallback={() => goHome()} className={"fir-close-modal fir-only-mobile"}/>
             <div className="fir-container fir-app-quiz-container">
                 {
                     request.isLoading ? <Loader/> : (

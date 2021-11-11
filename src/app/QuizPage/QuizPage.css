@@ -14,6 +14,12 @@
     padding-bottom: 2rem;
 }
 
+@media (max-width:480px) {
+    .fir-app-quiz-container {
+        padding: 0;
+    }
+}
+
 .fir-app-quiz-title {
     font-size: 4rem;
     color: #4953BE;
@@ -37,8 +43,8 @@
     color: #4953BE;
     font-weight: 500;
     letter-spacing: 0.5em;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     align-self: center;
 }
 
@@ -47,7 +53,7 @@
     font-weight: 500;
     color: #4953BE;
     text-align: center;
-    margin: 5rem -6rem;
+    margin: 4rem -6rem;
 }
 
 

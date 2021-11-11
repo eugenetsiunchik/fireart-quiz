@@ -60,12 +60,6 @@
 .fir-app-home-form {
     display: flex;
     flex-direction: column;
-    /*margin-top: auto;*/
     margin-bottom: auto;
-}
-
-.fir-button.fir-app-home-button {
-    margin-bottom: 3rem;
-    border-bottom: 0.4rem solid #C65252 !important;
 }
 

@@ -50,7 +50,7 @@ function HomePage() {
                     />
                 </div>
                 <Button
-                    className={"fir-app-home-button"}
+                    className={"fir-button-primary"}
                     ariaLabel="Start quiz"
                     onClick={() => goNext()}
                 >

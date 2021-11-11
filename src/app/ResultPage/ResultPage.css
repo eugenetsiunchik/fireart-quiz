@@ -8,15 +8,15 @@
 }
 
 .fir-container.fir-app-result-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /*padding-top: 2rem;*/
+    /*padding-bottom: 2rem;*/
 }
 
 @media (max-width:480px) {
     .fir-container.fir-app-result-container {
         display: flex;
         justify-content: center;
-        height: 100vh;
+        height: 100%;
         margin-top: 3rem;
         margin-bottom: 3rem;
     }

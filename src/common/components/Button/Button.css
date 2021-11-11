@@ -12,3 +12,9 @@
     margin-bottom: 1rem;
     padding: 1rem;
 }
+
+
+.fir-button.fir-button-primary {
+    margin-bottom: 3rem;
+    border-bottom: 0.4rem solid #C65252;
+}

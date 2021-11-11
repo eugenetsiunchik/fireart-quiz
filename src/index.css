@@ -63,3 +63,19 @@ input[type=number] {
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
 }
+
+.fir-close-modal {
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+}
+
+.fir-only-mobile {
+  display: none;
+}
+
+@media (max-width:480px) {
+  .fir-only-mobile {
+    display: block;
+  }
+}
