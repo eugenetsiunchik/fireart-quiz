@@ -8,8 +8,8 @@
 }
 
 .fir-container.fir-app-result-container {
-    /*padding-top: 2rem;*/
-    /*padding-bottom: 2rem;*/
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 @media (max-width:480px) {
@@ -19,6 +19,7 @@
         height: 100%;
         margin-top: 3rem;
         margin-bottom: 3rem;
+        padding: 0;
     }
 }
 

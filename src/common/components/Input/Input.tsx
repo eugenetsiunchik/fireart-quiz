@@ -1,5 +1,4 @@
 import React, { ChangeEvent, InputHTMLAttributes, useState } from "react";
-import "./Input.css";
 
 export interface InputProps {
     onChangeCallback?: Function
@@ -16,7 +15,7 @@ function Input(props: InputHTMLAttributes<HTMLInputElement> & InputProps) {
 
     return (
         <input
-            className="fir-inputs fir-input"
+            className="fir-inputs"
             onChange={event => onChange(event)}
             value={value}
             {...props}
