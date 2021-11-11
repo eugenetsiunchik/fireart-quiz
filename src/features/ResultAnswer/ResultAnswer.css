@@ -7,7 +7,7 @@
     margin-bottom: 1.5rem;
     margin-right: -6rem;
     margin-left: -6rem;
-    height: 2.8rem;
+    min-height: 2.8rem;
 }
 
 @media (max-width:480px) {
