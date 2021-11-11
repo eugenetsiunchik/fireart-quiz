@@ -1,5 +1,5 @@
-import React, { useEffect, useReducer } from 'react';
-import './App.css';
+import React from 'react';
+import "./App.css";
 import { RootState } from "../config/store";
 import { useSelector } from "react-redux";
 import { getComponentByRouteName } from "../common/routingHelper";

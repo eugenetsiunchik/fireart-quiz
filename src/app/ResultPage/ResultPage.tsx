@@ -20,7 +20,7 @@ function ResultPage() {
 
     const goHome = () => {
         dispatch(flushQuiz());
-        dispatch(redirect(Routes.home));
+        dispatch(redirect(Routes.HOME));
     }
 
     return(

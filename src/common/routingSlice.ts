@@ -6,7 +6,7 @@ export interface RoutingState {
 }
 
 const initialState: RoutingState = {
-    page: Routes.home
+    page: Routes.HOME
 }
 
 export const routingSlice = createSlice({

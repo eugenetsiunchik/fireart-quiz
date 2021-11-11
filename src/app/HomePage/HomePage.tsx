@@ -25,7 +25,7 @@ function HomePage() {
 
     const goNext = () => {
         dispatch(saveSettings({difficulty: difficulty.toLocaleLowerCase(), amount}))
-        dispatch(redirect(Routes.quiz));
+        dispatch(redirect(Routes.QUIZ));
     }
 
     return(
@@ -41,7 +41,7 @@ function HomePage() {
                     <Select options={difficultyOptions} onSelect={(selected: string) => setDifficulty(selected)}/>
                     <Label Image={<Star/>} text={'Amount'}/>
                     <InputNumber
-                        value={amount}
+                        defaultValue={amount}
                         onChangeCallback={(value: number) => setAmount(value)}
                         type="number"
                         aria-label="Amount of questions"

@@ -31,7 +31,8 @@ function QuizPage() {
     const request = useFetch();
 
     useEffect(() => {
-        request.run(`${API_URL}?amount=${amount}&difficulty=${difficulty}&type=boolean`);
+        const getQuestionsUrl = `${API_URL}?amount=${amount}&difficulty=${difficulty}&type=boolean`;
+        request.run(getQuestionsUrl).then();
     }, []);
 
     useEffect(() => {
@@ -45,9 +46,10 @@ function QuizPage() {
 
     const onAnswer = (value: string) => {
         const question = questions[index];
-        dispatch(answerOnQuestion({ index, question: question?.question || null, isCorrect: value === question?.correct_answer }))
+        const isCorrect = value === question?.correct_answer;
+        dispatch(answerOnQuestion({ index, question: question?.question || null, isCorrect }))
         if (index + 1 >= questions.length) {
-            dispatch(redirect(Routes.result));
+            dispatch(redirect(Routes.RESULT));
             return;
         }
 
@@ -56,8 +58,8 @@ function QuizPage() {
     }
 
     const goHome = () => {
-        dispatch(flushQuiz())
-        dispatch(redirect(Routes.home));
+        dispatch(flushQuiz());
+        dispatch(redirect(Routes.HOME));
     }
 
     if (request.error) {
@@ -67,7 +69,7 @@ function QuizPage() {
                     <span>Something went wrong!</span>
                     <Button
                         ariaLabel="Go home"
-                        onClick={() => dispatch(redirect(Routes.home))}
+                        onClick={() => dispatch(redirect(Routes.HOME))}
                     >
                         GO HOME
                     </Button>

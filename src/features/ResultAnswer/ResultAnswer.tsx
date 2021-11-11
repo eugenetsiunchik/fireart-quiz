@@ -10,8 +10,9 @@ export interface ResultAnswerProps {
 
 function ResultAnswer(props: ResultAnswerProps) {
     const { isCorrect, text } = props;
+    const backgroundColor =  isCorrect ? 'white' : '#FFDBDB';
     return (
-        <div className="fir-result-answer" style={{ backgroundColor: isCorrect ? 'white' : '#FFDBDB' }}>
+        <div className="fir-result-answer" style={{ backgroundColor }}>
             <span dangerouslySetInnerHTML={{ __html: text || '' }}/>
             <div className="fir-result-answer-mark">
                 {

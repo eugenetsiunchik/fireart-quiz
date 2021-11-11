@@ -7,8 +7,8 @@ export interface InputNumbersProps {
 }
 
 function InputNumber(props: InputHTMLAttributes<HTMLInputElement> & InputNumbersProps & InputProps) {
-    const { value: defaultValue = '', min, max, onChangeCallback } = props;
-    const [ value, setValue ] = useState<number | string | readonly string[]>(defaultValue);
+    const { defaultValue = '', min, max, onChangeCallback } = props;
+    const [ value, setValue ] = useState(defaultValue);
 
     const onChangeNumbers = (event: ChangeEvent<HTMLInputElement>) => {
         if (event.target.value === '') {

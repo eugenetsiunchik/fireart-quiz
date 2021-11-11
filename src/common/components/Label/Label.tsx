@@ -10,7 +10,7 @@ function Label(props: LabelProps) {
     const { Image, text } = props;
     return (
         <div className="fir-label">
-            <div className="fir-label-image">{ Image }</div>
+            <div className="fir-label-image">{Image}</div>
             <span className="fir-label-text">{text}</span>
         </div>
     )

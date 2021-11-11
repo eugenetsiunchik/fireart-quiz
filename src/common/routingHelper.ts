@@ -3,18 +3,18 @@ import QuizPage from "../app/QuizPage/QuizPage";
 import ResultPage from "../app/ResultPage/ResultPage";
 
 export enum Routes {
-    home = 'home',
-    quiz = 'quiz',
-    result = 'result'
+    HOME = 'HOME',
+    QUIZ = 'QUIZ',
+    RESULT = 'RESULT'
 }
 
 export const getComponentByRouteName = (page: Routes): any => {
     switch (page) {
-        case Routes.home:
+        case Routes.HOME:
             return HomePage;
-        case Routes.quiz:
+        case Routes.QUIZ:
             return QuizPage;
-        case Routes.result:
+        case Routes.RESULT:
             return ResultPage;
     }
 }
