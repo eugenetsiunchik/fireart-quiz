@@ -1,9 +1,9 @@
 ## Common Explanations
 
 ### default index.js export
-File`index.js` into each folder looks weird for me.
-Double component mentioning `import "./app/SomeComponent/SomeComponent"` in import, is lower price, than create unnecessary import files in each component folder. 
-p.s. I'll use structure with `index.js` if project based on it
+File`index.js` in each folder looks weird for me.
+Double component mentioning `import "./app/SomeComponent/SomeComponent"` in import, is lower price, than create unnecessary index files in each component folder. 
+p.s. I'll use structure with `index.js` if project is based on it
 
 ## Figma design issues
 
