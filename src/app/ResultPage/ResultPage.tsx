@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { RootState, useAppDispatch } from "../../config/store";
 import { redirect } from "../../common/routingSlice";
 import { flushQuiz } from "../QuizPage/quizPageSlice";
@@ -16,8 +16,8 @@ import Close from "../../common/components/Close/Close";
 function ResultPage() {
     const dispatch = useAppDispatch();
     const answers = useSelector((state: RootState) => state.quiz.answers);
-    const correctCount = answers.reduce((acc, val) => acc + (val?.isCorrect ? 1 : 0), 0);
-
+    const correctCount = useMemo(() => answers.reduce((acc, val) => acc + (val?.isCorrect ? 1 : 0), 0), [ answers ])
+    
     const goHome = () => {
         dispatch(flushQuiz());
         dispatch(redirect(Routes.HOME));

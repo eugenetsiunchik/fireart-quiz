@@ -24,14 +24,15 @@ export function useFetch() {
 
     const run = async (request: RequestInfo, init?: RequestInit) => {
         try {
-            // it would be great extract fetch to service and use service.getSomethingConcrete
-            // but I just writing this comment instead =)
             const response = await fetch(request, {...init});
-            setResponse(await response?.json());
+            const json = await response?.json();
+            setResponse(json);
             setIsLoading(false);
+            return json;
         } catch (error: any) {
             setError(error);
             setIsLoading(false);
+            return null;
         }
     }
 
