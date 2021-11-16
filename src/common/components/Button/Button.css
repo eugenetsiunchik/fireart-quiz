@@ -13,6 +13,9 @@
     padding: 1rem;
 }
 
+.fir-button:hover {
+    opacity: 90%;
+}
 
 .fir-button.fir-button-primary {
     margin-bottom: 3rem;

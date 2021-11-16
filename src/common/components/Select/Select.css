@@ -1,8 +1,22 @@
-.fir-select {
+.fir-select-container {
+    display: flex;
     position: relative;
+}
+
+.fir-select {
     cursor: pointer;
     display: flex;
     align-items: center;
+    flex: 1;
+    /* hide default dropdown icon for Firefox */
+    -moz-appearance: none;
+    /* hide default dropdown icon for Chrome */
+    -webkit-appearance: none;
+}
+
+/* hide default dropdown icon for IE10 */
+.fir-select::-ms-expand {
+    display: none;
 }
 
 .fir-select-value {
@@ -12,6 +26,9 @@
 }
 
 .fir-select-icon {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
 }

@@ -4,6 +4,13 @@
   }
 }
 
+@media (max-width:320px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -33,10 +40,26 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   width: 32rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
   z-index: 1;
 }
 
+@media (max-width:960px) {
+  .fir-container {
+    width: 100%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
 @media (max-width:480px) {
+  .fir-container {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
+@media (max-width:360px) {
   .fir-container {
     height: calc(var(--vh, 1vh) * 100);
   }
@@ -58,21 +81,21 @@ input[type=number] {
   border: 0.1rem solid white;
   color: white;
   font-size: 1.1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
 }
 
 .fir-close-modal {
   position: absolute;
-  top: 5rem;
-  right: 10rem;
+  top: 4rem;
+  right: 9rem;
+  z-index: 2;
 }
 
-@media (max-width:480px) {
+@media (max-width:960px) {
   .fir-close-modal {
-    right: 3rem;
+    right: 2rem;
   }
 }
 

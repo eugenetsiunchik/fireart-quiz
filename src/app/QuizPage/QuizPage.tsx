@@ -31,6 +31,7 @@ function QuizPage() {
 
     useEffect(() => {
         api.getQuestions(amount, difficulty).then();
+        // eslint-disable-next-line
     }, []);
 
     useEffect(() => {
@@ -40,6 +41,7 @@ function QuizPage() {
         setQuestions(results);
         setCurrentQuestion(results[0]);
         dispatch(saveQuestions(results));
+        // eslint-disable-next-line
     }, [ api.fetch.response ]);
 
     const onAnswer = (value: string) => {

@@ -45,7 +45,7 @@ function HomePage() {
                         onChangeCallback={(value: number) => setAmount(value)}
                         type="number"
                         aria-label="Amount of questions"
-                        min={0}
+                        min={1}
                         max={10}
                     />
                 </div>

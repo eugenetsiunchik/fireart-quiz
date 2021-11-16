@@ -10,7 +10,7 @@
     min-height: 2.8rem;
 }
 
-@media (max-width:480px) {
+@media (max-width:960px) {
     .fir-result-answer {
         margin-right: 0;
         margin-left: 0;

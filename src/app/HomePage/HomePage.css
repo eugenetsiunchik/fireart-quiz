@@ -31,7 +31,6 @@
 
 @media (max-width:480px) {
     .fir-app-home-top {
-        /*padding-top: 12rem;*/
         margin: auto;
     }
 }
@@ -41,13 +40,21 @@
     font-size: 3rem;
     color: white;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .fir-app-home-top-logo {
     width: 52rem;
     height: 36rem;
-    margin: -6rem -8rem;
+    margin: -4rem -8rem;
     align-self: center;
+}
+
+@media (max-width:960px) {
+    .fir-app-home-top-logo {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media (max-width:480px) {
