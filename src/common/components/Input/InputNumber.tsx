@@ -1,13 +1,13 @@
 import React, { ChangeEvent, InputHTMLAttributes, useState } from "react";
-import Input, { InputProps } from "./Input";
 
 export interface InputNumbersProps {
+    onChangeCallback?: Function,
     min: number,
     max: number
 }
 
-function InputNumber(props: InputHTMLAttributes<HTMLInputElement> & InputNumbersProps & InputProps) {
-    const { defaultValue = '', min, max, onChangeCallback } = props;
+function InputNumber(props: InputHTMLAttributes<HTMLInputElement> & InputNumbersProps) {
+    const { defaultValue = '', min, max, onChangeCallback, ...otherProps } = props;
     const [ value, setValue ] = useState(defaultValue);
 
     const onChangeNumbers = (event: ChangeEvent<HTMLInputElement>) => {
@@ -23,10 +23,11 @@ function InputNumber(props: InputHTMLAttributes<HTMLInputElement> & InputNumbers
     }
 
     return (
-        <Input
-            {...props}
+        <input
+            className={"fir-inputs"}
             onChange={event => onChangeNumbers(event)}
             value={value}
+            {...otherProps}
         />
     )
 }
